@@ -1,4 +1,3 @@
-import('p5')
 
 function setup() {
     createCanvas(600, 400);
@@ -48,3 +47,4 @@ function draw() {
     arc(3*150+10, 50, 150, 35, PI*0, PI*1)
 
 }
+

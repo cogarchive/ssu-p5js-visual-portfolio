@@ -1,21 +1,19 @@
 {
-  "name": "ssu-p5js",
-  "version": "0.0.0",
+  "name": "@ssu/p5js-visual-portfolio",
+  "version": "1.0.0",
   "private": true,
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "mkdir -p dist && pnpm dlx @tailwindcss/cli -i ./style.css -o ./dist/style.css && cp *.html dist/ && cp src/*.js dist/"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.4.15",
-    "vite": "^8.0.12"
+    "@rspack/dev-server": "2.0.3"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.3.0",
-    "es-toolkit": "^1.47.0",
+    "@tailwindcss/cli": "^4.3.0",
+    "@tailwindcss/postcss": "^4.3.0",
     "p5": "^2.3.0",
+    "postcss": "^8.5.15",
+    "postcss-loader": "^8.2.1",
     "tailwindcss": "^4.3.0"
   }
 }

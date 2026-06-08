@@ -1,5 +1,3 @@
-import('p5');
-
 function keyPressed() {
   if (key === 's') {
     saveGif('ssu-p5js-assignment-4', 10);
