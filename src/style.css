@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@import url('https://cdn.jsdelivr.net/gh/fonts-archive/LINESeedKR/LINESeedKR.css');
+
+html, body {
+  font-family: 'LINE Seed KR', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  @apply bg-slate-50;
+}
+html {
+  @apply bg-slate-100;
+}
+
+@theme {
+  --color-p5: oklch(0.6137 0.2301 12.51);
+}
+
